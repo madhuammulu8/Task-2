@@ -1,0 +1,46 @@
+.topping-select-container  {
+    width: 300px; /* Adjust the width as needed */
+    /* color: white; */
+    margin-top: 10px
+  }
+  
+  input {
+    flex: 1; /* Take up remaining space */
+    border-radius: 4px 0 0 4px; /* Adjust border radius as needed */
+    padding: 8px; /* Adjust padding as needed */
+    border-radius: 20px;
+  }
+  
+  .mat-select {
+    border-radius: 0 4px 4px 0; /* Adjust border radius as needed */
+    padding: 8px; /* Adjust padding as needed */
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Style the search container */
+.search-container {
+    background-color: rgb(46, 187, 46);
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 40px; /* Add border-radius for search container */
+    padding: 4px; /* Add padding */
+  }
+  
+  /* Style the search input */
+  input {
+    flex: 1; /* Take up remaining space */
+    outline: none; /* Remove input outline */
+  }
+  
+  /* Style the dropdown icon */
+  .search-container::after {
+    /* content: '\25BC'; */ /* Unicode character for a down arrow */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 8px; /* Adjust margin as needed */
+  }
+  
+  /* Style the search container on focus */
+
+  

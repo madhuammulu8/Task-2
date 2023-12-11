@@ -1,0 +1,27 @@
+<!-- <mat-form-field>
+  <mat-label>Toppings</mat-label>
+  <mat-select [formControl]="toppings" multiple>
+    <mat-option *ngFor="let topping of toppingList" [value]="topping">
+      {{ topping }}
+    </mat-option>
+  </mat-select>
+</mat-form-field> -->
+
+
+<mat-form-field class="topping-select-container">
+  <div class="search-container">
+    <input matInput placeholder="{{ toppingInput.value }}"  [formControl]="toppingInput" [value]="toppingInput.value" (input)="onInputChange($event)">
+    <!-- <input matInput placeholder="{{ toppingInput.value }}"  [formControl]="toppingInput" [value]="toppingInputValue" (input)="onInputChange($event)"> -->
+
+  <mat-select [formControl]="toppings" multiple>
+    <mat-select-trigger>
+      {{ toppings.value ? toppings.value.join(', ') : '' }}
+    </mat-select-trigger>
+    <mat-option *ngFor="let topping of filteredToppingList | async" [value]="topping">
+      {{ topping }}
+    </mat-option>
+  </mat-select>
+</div>
+</mat-form-field>
+
+
